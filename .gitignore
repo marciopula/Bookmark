@@ -144,3 +144,5 @@ dist
 
 # misc
 .DS_Store
+/instructions.md
+/layoutTemplate.md
