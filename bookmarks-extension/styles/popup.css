@@ -1,0 +1,230 @@
+body {
+  width: 300px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-footer {
+  padding: 0 16px 16px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+button i {
+  margin-right: 8px;
+}
+
+.primary-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: #45a049;
+}
+
+.secondary-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.secondary-button:hover {
+  background-color: #1e88e5;
+}
+
+.tertiary-button {
+  background-color: #555;
+  color: white;
+}
+
+.tertiary-button:hover {
+  background-color: #444;
+}
+
+.destructive-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.destructive-button:hover {
+  background-color: #d32f2f;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 4px;
+  width: auto;
+}
+
+.icon-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+#status {
+  margin-top: 12px;
+  font-style: italic;
+  color: #666;
+  text-align: center;
+}
+
+#aboutSection {
+  margin-top: 16px;
+}
+
+#aboutSection p {
+  margin: 8px 0;
+}
+
+#settingsSection {
+  margin-top: 16px;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.setting-item label {
+  flex-grow: 1;
+}
+
+#syncIntervalInput {
+  width: 60px;
+}
+
+.last-sync-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+  text-align: center;
+}
+
+#deviceList {
+  margin-bottom: 16px;
+}
+
+#deviceList h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.device-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.device-item {
+  margin-bottom: 8px;
+}
+
+.select-device {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.select-device:hover {
+  background-color: #f5f5f5;
+  border-color: #d0d0d0;
+}
+
+.device-icon {
+  margin-right: 12px;
+  color: #4CAF50;
+}
+
+.device-name {
+  flex-grow: 1;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+.select-text {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+/* Style for selected device */
+.select-device.selected {
+  background-color: #e8f5e9;
+  border-color: #4CAF50;
+}
+
+.select-device.selected .select-text {
+  display: none;
+}
+
+.select-device.selected::after {
+  content: 'Selected';
+  color: #4CAF50;
+  font-weight: bold;
+}

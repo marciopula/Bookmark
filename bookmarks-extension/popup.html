@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarks Sync</title>
+  <link rel="stylesheet" type="text/css" href="styles/popup.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <h1 class="card-title">Bookmarks Sync</h1>
+      <div class="header-buttons">
+        <button id="aboutButton" class="icon-button" title="About"><i class="material-icons">info</i></button>
+        <button id="quickLogoutButton" class="icon-button" title="Quick Logout"><i class="material-icons">logout</i></button>
+      </div>
+    </div>
+    <div class="card-content">
+      <div id="loginForm">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button id="loginButton" class="primary-button">Login</button>
+      </div>
+      <div id="mainContent" style="display: none;">
+        <div id="deviceList"></div>
+        <div id="selectedDeviceInfo" style="display: none;">
+          <p>Selected Device: <span id="selectedDeviceName"></span></p>
+        </div>
+        <button id="syncButton" class="primary-button" style="display: none;"><i class="material-icons">sync</i> Sync Bookmarks</button>
+        <button id="newDeviceButton" class="secondary-button"><i class="material-icons">add_circle</i> New Device</button>
+        <button id="settingsButton" class="tertiary-button"><i class="material-icons">settings</i> Settings</button>
+        <p id="lastSyncText" class="last-sync-text"></p>
+      </div>
+      <div id="settingsSection" style="display: none;">
+        <h2>Settings</h2>
+        <div class="setting-item">
+          <label for="autoSyncCheckbox">Auto-Sync</label>
+          <input type="checkbox" id="autoSyncCheckbox">
+        </div>
+        <div class="setting-item">
+          <label for="syncIntervalInput">Sync Interval (minutes)</label>
+          <input type="number" id="syncIntervalInput" min="15" max="1440" value="60">
+        </div>
+        <button id="saveSettingsButton" class="primary-button">Save Settings</button>
+      </div>
+      <div id="aboutSection" style="display: none;">
+        <h2>About</h2>
+        <p>Bookmarks Sync v1.0</p>
+        <p>Sync your Chrome bookmarks across devices.</p>
+      </div>
+    </div>
+    <div id="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
