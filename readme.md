@@ -20,8 +20,8 @@ Bookmarks Sync is a web application that allows users to synchronize their Chrom
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/bookmarks-sync.git
-   cd bookmarks-sync
+   git clone https://github.com/marciopula/Bookmark.git
+   cd bookmarks
    ```
 
 2. Install dependencies for both backend and frontend:
